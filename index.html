@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act Different</title>
+    <style>
+      :root { --flow-space: calc(2 * 1.618rem); }
+      /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,24,1.618,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+      :root {
+        --step--2: clamp(0.573rem, 0.8537rem + -0.3622vw, 0.7813rem);
+        --step--1: clamp(0.9271rem, 0.9411rem + -0.0181vw, 0.9375rem);
+        --step-0: clamp(1.125rem, 0.9946rem + 0.6522vw, 1.5rem);
+        --step-1: clamp(1.35rem, 0.9754rem + 1.873vw, 2.427rem);
+        --step-2: clamp(1.62rem, 0.8176rem + 4.012vw, 3.9269rem);
+        --step-3: clamp(1.944rem, 0.4102rem + 7.669vw, 6.3537rem);
+        --step-4: clamp(2.3328rem, -0.4315rem + 13.8217vw, 10.2803rem);
+        --step-5: clamp(2.7994rem, -2.0125rem + 24.0594vw, 16.6335rem);
+      }
+      @font-face {
+        font-family: "Garamond-Normal";
+        src: url('Garamond-NormalThin.woff2') format('woff2'),
+        url('Garamond-NormalThin.woff') format('woff'),
+        url("Garamond-NormalThin.ttf") format("truetype");
+        font-weight: 100;
+      }
+      html { font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; }
+      body { font-size: var(--step-0); line-height: 1.618em; }
+      body { background: #222; color: #fefefe; }
+      * { margin-block: 0; }
+      h1, h2, h3 { font-family: "Garamond-Normal"; font-stretch: condensed; font-weight: 100; line-height: 1.0; }
+      h1 { font-size: var(--step-5); }
+      h2 { font-size: var(--step-2); }
+      blockquote { font-style: italic; font-size: var(--step-1); margin-inline: 0; }
+      blockquote cite { font-size: var(--step-0); }
+      p { }
+      main {
+        display: grid;
+        grid-template-columns: 1fr [content-start] minmax(0, 50ch) [content-end] 1fr;
+        padding-block: 10vh;
+      }
+      main > * { grid-column: content; }
+      #hero { grid-column-start: 1; grid-column-end: 4; }
+      #hero { text-align: center; }
+      #hero { line-height: 0.9; margin-block: 4vh; }
+      .flow > * + * {
+        margin-block-start: var(--flow-space, 1em);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flow">
+      <hgroup id="hero">
+        <!-- <span style="font-size: calc(1.618 * var(--step-4));">♥</span> -->
+        <img src="heart.svg" title="♥" style="max-width: clamp(1rem, 4rem + 10vw, 20rem); max-height: 20vh;">
+        <h1 style="margin-block: 0;">Act Different.</h1>
+      </hgroup>
+    </main>
+  </body>
+</html>
