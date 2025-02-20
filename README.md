@@ -1,6 +1,6 @@
 # Act Different.
 
-<center><img src="heart.svg" width="100" height="100"/></center>
+<img src="heart.svg"/>
 
 ## License
 
