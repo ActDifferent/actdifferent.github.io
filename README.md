@@ -1,7 +1,5 @@
 # Act Different.
 
-<img src="heart.svg"/>
-
 ## License
 
 _Act Different_ is marked with CC0 1.0.
