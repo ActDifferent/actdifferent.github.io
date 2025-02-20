@@ -34,7 +34,7 @@
         -o-transform: var(--scale);
         transform: var(--scale);
       }
-      h1 { font-size: var(--step-5); }
+      h1 { font-size: var(--step-4); }
       h2 { font-size: var(--step-2); }
       blockquote { font-style: italic; font-size: var(--step-1); margin-inline: 0; }
       blockquote cite { font-size: var(--step-0); }
@@ -46,7 +46,7 @@
       }
       main > * { grid-column: content; }
       #hero { grid-column-start: 1; grid-column-end: 4; }
-      #hero { display: flex; flex-direction: column; gap: 4vh; align-items: center; margin-block: 4vh; }
+      #hero { display: flex; flex-direction: column; gap: 15vh; align-items: center; margin-block: 4vh; }
       .flow > * + * {
         margin-block-start: var(--flow-space, 1em);
       }
@@ -56,7 +56,7 @@
     <main class="flow">
       <hgroup id="hero">
         <!-- <span style="font-size: calc(1.618 * var(--step-4));">♥</span> -->
-        <img src="heart.svg" title="♥" style="max-width: clamp(1rem, 4rem + 10vw, 20rem); max-height: 20vh;">
+        <img src="heart.svg" title="♥" style="max-width: clamp(1rem, 4rem + 12vw, 20rem); max-height: 80vh;">
         <h1>Act&nbsp;different.</h1>
       </hgroup>
     </main>
