@@ -46,7 +46,7 @@
       }
       main > * { grid-column: content; }
       #hero { grid-column-start: 1; grid-column-end: 4; }
-      #hero { display: flex; flex-direction: column; gap: 15vh; align-items: center; margin-block: 4vh; }
+      #hero { display: flex; flex-direction: column; gap: calc(var(--step-4) / 1.618); align-items: center; margin-block: 4vh; }
       .flow > * + * {
         margin-block-start: var(--flow-space, 1em);
       }
