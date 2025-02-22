@@ -6,6 +6,13 @@
     <title>Act different</title>
     <style>
       :root { --flow-space: calc(2 * 1.618rem); }
+      :root {
+        /* uchu palette https://uchu.style/simple.html */
+        --fg-color: oklch(99.4% 0 0);                /* --uchu-yang */
+        --fg-light: oklch(61.01% 0.005 271.34);      /* --uchu-yin-5 */
+        --bg-color: oklch(14.38% 0.007 256.88);      /* --uchu-yin */
+        --link-color: oklch(78.75% 0.1416 54.3291);  /* --uchu-orange */
+      }
       /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,24,1.618,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
       :root {
         --step--2: clamp(0.573rem, 0.8537rem + -0.3622vw, 0.7813rem);
@@ -19,7 +26,7 @@
       }
       html { font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; }
       body { font-size: var(--step-0); line-height: 1.618em; }
-      body { background: #222; color: #fefefe; }
+      body { background: var(--bg-color); color: var(--fg-color); }
       * { margin-block: 0; }
       h1, h2, h3 {
         font-family: "Garamond", serif;
@@ -50,6 +57,8 @@
       .flow > * + * {
         margin-block-start: var(--flow-space, 1em);
       }
+      a, a:link, a:hover, a:visited { color: var(--link-color);  }
+      .done { color: var(--fg-light); }
     </style>
   </head>
   <body>
